@@ -80,7 +80,7 @@ namespace Prueba_1_Asterix
                     //Recuperamos todos los bytes del FSPEC
                     byte[] fspecActual = new byte[0];
                     int j = 0;
-                    Boolean sigue = true;
+                    Boolean sigue = true;/*
                     while (sigue)
                     {
                         fspecActual[j] = fileBytes[direccionDataRecordProcesando + 3 + j];
@@ -89,7 +89,7 @@ namespace Prueba_1_Asterix
                             Console.WriteLine("La división de j entre 7 no tiene residuo.");
                         }
                         j++;
-                    }
+                    }*/
 
                     dataRecord_struct item = new dataRecord_struct();
 
@@ -106,7 +106,7 @@ namespace Prueba_1_Asterix
                     Console.WriteLine($"Saltando al siguiente data record...");
                 }
                 //Console.WriteLine($"Tamaño de lista de dataRecords: {listaDataRecords.Count}"); línea para controlar cómo se llena la lista
-                direccionDataRecordProcesando = direccionDataRecordProcesando + longitudDataRecordProcesando;
+                direccionDataRecordProcesando = direccionDataRecordProcesando + longitudDataRecordProcesando - 1;
             }
             int i = 0;
             while (i< listaDataRecords.Count) //Recorremos la lista de data records y los almacenamos en su estructura
