@@ -1,0 +1,7 @@
+C:\Users\guzma\source\repos\Prueba_1_Asterix\bin\Debug\Prueba_1_Asterix.exe.config
+C:\Users\guzma\source\repos\Prueba_1_Asterix\bin\Debug\Prueba_1_Asterix.exe
+C:\Users\guzma\source\repos\Prueba_1_Asterix\bin\Debug\Prueba_1_Asterix.pdb
+C:\Users\guzma\source\repos\Prueba_1_Asterix\obj\Debug\Prueba_1_Asterix.csproj.AssemblyReference.cache
+C:\Users\guzma\source\repos\Prueba_1_Asterix\obj\Debug\Prueba_1_Asterix.csproj.CoreCompileInputs.cache
+C:\Users\guzma\source\repos\Prueba_1_Asterix\obj\Debug\Prueba_1_Asterix.exe
+C:\Users\guzma\source\repos\Prueba_1_Asterix\obj\Debug\Prueba_1_Asterix.pdb
