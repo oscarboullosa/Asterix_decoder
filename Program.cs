@@ -33,7 +33,7 @@ namespace Prueba_1_Asterix
         public Boolean xPulse { get; set; }
         public Boolean military { get; set; }
         public int FOE_FRI { get; set; }
-        public Boolean simulated { get; set; }
+        //public Boolean simulated { get; set; }
 
 
     }
@@ -68,11 +68,12 @@ namespace Prueba_1_Asterix
                     Console.WriteLine($"Aceptado: data record de categoría: {categoriaActual}");
 
                     //Recuperamos todos los bytes del data record
+                    /*
                     byte[] dataRecord = new byte[longitudDataRecordProcesando];
                     for (int j = 0; j < dataRecord.Length; j++)
                     {
                         dataRecord[j] = fileBytes[direccionDataRecordProcesando+j];
-                    }
+                    }*/
 
                     //Primero de todo averiguamos la longitud del FSPEC
 
@@ -89,7 +90,7 @@ namespace Prueba_1_Asterix
                             Console.WriteLine("La división de j entre 7 no tiene residuo.");
                         }
                         j++;
-                    }*/
+                    }
 
                     dataRecord_struct item = new dataRecord_struct();
 
@@ -97,7 +98,7 @@ namespace Prueba_1_Asterix
                     item.longitud = longitudDataRecordProcesando;
                     item.datos = dataRecord;
 
-                    listaDataRecords.Add(item);
+                    listaDataRecords.Add(item);*/
                     
                 }
                 else //Este else irá fuera por términos de velocidad
@@ -106,7 +107,7 @@ namespace Prueba_1_Asterix
                     Console.WriteLine($"Saltando al siguiente data record...");
                 }
                 //Console.WriteLine($"Tamaño de lista de dataRecords: {listaDataRecords.Count}"); línea para controlar cómo se llena la lista
-                direccionDataRecordProcesando = direccionDataRecordProcesando + longitudDataRecordProcesando - 1;
+                direccionDataRecordProcesando = direccionDataRecordProcesando + longitudDataRecordProcesando + 1;
             }
             int i = 0;
             while (i< listaDataRecords.Count) //Recorremos la lista de data records y los almacenamos en su estructura
